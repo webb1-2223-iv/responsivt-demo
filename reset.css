@@ -1,0 +1,24 @@
+/* Innehållet i denna css-fil är saker som oftast är bra att göra */
+
+* {
+    /* denna regel gäller för allt */
+    /* ange att bredd och höjd ska beräknas inkl. padding och border */
+    /* ex width: 100px är fortfarande 100px bred även om det finns border på 10px och padding på 10px */
+    box-sizing: border-box;
+}
+
+body {
+    /* ta bort inbyggd padding och margin */
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    /* bilder som block så de kan få bredd, margin, etc */
+    display: block;
+
+    /* bilder får inte vara större än det som är runt dem */
+    max-height: 100%;
+    max-width: 100%;
+}
+

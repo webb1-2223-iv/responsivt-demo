@@ -1,0 +1,30 @@
+/* vi börjar alltid i mobilversion med regler som alltid tillämpas */
+/* de här reglerna skrivs sedan över vid större bredder efter behov */
+
+body {
+    background: #333;
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        background: #555;
+    }   
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        background: #888;
+    }   
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background: #aaa;
+    }   
+}
+
+@media screen and (min-width: 1500px) {
+    body {
+        background: #eee;
+    }   
+}
