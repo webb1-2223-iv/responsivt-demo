@@ -1,0 +1,50 @@
+/* vi börjar alltid i mobilversion med regler som alltid tillämpas */
+/* de här reglerna skrivs sedan över vid större bredder efter behov */
+
+main {
+    margin: 10px;
+}
+
+body {
+    /* bakgrundsfärg som ändras för att vara tydlig vilken regel som gäller nu */
+    background: #945858;
+}
+
+#parent {
+    background: white;
+    display: flex;
+    
+    /* börja med divvar en efter annan i mobilversionen */
+    flex-direction: column;
+}
+
+#parent div {
+    padding: 10px;
+    border: solid thin #333;
+    background: #aaa;
+    width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        background: #acd89b;
+    }
+    #parent {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #parent div{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        background: #7b94e7;
+    }   
+    #parent div{
+        width: 25%;
+    }
+
+}
+
